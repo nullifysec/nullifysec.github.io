@@ -1,0 +1,63 @@
+# SITE CONFIGURATION
+title: Nullify # site title
+author: Nullify 
+description: > # Meta description of Homepage
+  This is the main site for Nullify where you will find posts on cutting edge cybersecurity research
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://nullify.sh/" # the base hostname & protocol the site
+
+# SEO PLUGIN
+social:
+  name: Nullify
+  links:
+    - https://twitter.com/NullifySec
+    - https://github.com/nullifysec
+
+# THEME SETTINGS
+navigation: # Navigation links
+  - {name: 'Home', link: '/'}
+  - {name: 'About', link: '/about'}
+  - {name: 'Contact', link: '/contact'}
+
+tagline: >
+  Cyber Security Research
+
+hero_img: posts/astronomy.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+
+email: nullifysec@gmail.com # email for form submission
+
+twitter_username: NullifySec 
+github_username:  nullifysec 
+
+disqus:
+  shortname: nullify-sh # Disqus shortname for supporting comments on pages
+
+google_tag_manager: GTM-MD7MG89 
+service_worker: true
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge # or pygments or null
+# theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
+exclude:
+  - README.md
+  - node_modules
+  - script
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - npm-debug.log
+  - gulpfile.js
+  - sleek.jpg
+
+include: ['_pages']
+permalink: /:title/
+
+compress_html:
+  clippings: all
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
