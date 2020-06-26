@@ -1,4 +1,4 @@
-# Nullify
+# Nullify Security
 
 Nullify is comprised of cybersecurity researchers, where we post about our research and interesting discoveries we might make. The Nullify website is open source and was built using [Jekyll](https://jekyllrb.com), a simple static site generator using Ruby, Markdown, Liquid, HTML, CSS, and much more. Jekyll is what powers Github Pages, which makes hosting a website very simple and easy to deploy.  Jekyll is also Blog-Aware, meaning things like posts, categories, permalinks, and layouts are all supported and easy to maintain.
 
